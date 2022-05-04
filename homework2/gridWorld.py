@@ -29,7 +29,7 @@ class GridWorld:
             reward -= 1
             self.state = newstate
         elif field == 'F':
-            reward += 100
+            reward += 20
             self.state = newstate
             return self.state, reward, True
         return self.state, reward, False
